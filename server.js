@@ -4,6 +4,8 @@ const socketIo = require('socket.io');
 const cors = require('cors');
 const { MongoClient, ObjectId } = require('mongodb');
 const { v4: uuidv4 } = require('uuid');
+dotenv = require('dotenv');
+dotenv.config();
 
 const app = express();
 const server = http.createServer(app);
